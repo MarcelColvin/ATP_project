@@ -29,18 +29,19 @@ Firstly I upsampled the training data in order to balance the data set, since it
 In evaluation of the models, I used the upsampled 80% training data, which ended up having around 32,000 data points to train my models and tested it on the holdout data. The Random Forest model then underwent a gridsearch to optimize the hyper parameters and was able to be optimized by its ROC AUC. I decided to choose this metric for the model because in a cursory Extra Trees model it was able to incorrectly predict everything as not an upset and get an extremely high precision, which is the metric that is most important for this project. The ROC AUC is the metric that shows how well a model distinguishes between the classes and does an extremely good job.
 
 Final Test Metrics:
-Accuracy: 0.9867971419695558
-Precision: 0.9779107225034515
-Recall: 0.982886216466235
-F1: 0.9803921568627452
+
+- Accuracy: 0.9867971419695558
+- Precision: 0.9779107225034515
+- Recall: 0.982886216466235
+- F1: 0.9803921568627452
 
 ![title](images/cm_rf.png)
 
 ### Tools
 
-Pandas and Numpy for data handling and feature engineering
-Sklearn for modeling
-Matplotlib and sklearn for plotting
+- Pandas and Numpy for data handling and feature engineering
+- Sklearn for modeling
+- Matplotlib and sklearn for plotting
 
 ### Communications
 
